@@ -1,0 +1,8 @@
+/home/user/ShoroukWork/redpesk/CameraDemoV0/build/CMakeFiles/rebuild_cache.dir
+/home/user/ShoroukWork/redpesk/CameraDemoV0/build/CMakeFiles/edit_cache.dir
+/home/user/ShoroukWork/redpesk/CameraDemoV0/build/CameraStream/CMakeFiles/rebuild_cache.dir
+/home/user/ShoroukWork/redpesk/CameraDemoV0/build/CameraStream/CMakeFiles/edit_cache.dir
+/home/user/ShoroukWork/redpesk/CameraDemoV0/build/CameraStream/CMakeFiles/CameraStream.dir
+/home/user/ShoroukWork/redpesk/CameraDemoV0/build/ObjectDetection/CMakeFiles/rebuild_cache.dir
+/home/user/ShoroukWork/redpesk/CameraDemoV0/build/ObjectDetection/CMakeFiles/edit_cache.dir
+/home/user/ShoroukWork/redpesk/CameraDemoV0/build/ObjectDetection/CMakeFiles/ObjectDetection.dir

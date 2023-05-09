@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "afb-binding": "cpp",
+        "binding": "cpp"
+    },
+    "files.autoSave": "afterDelay",
+
+}
