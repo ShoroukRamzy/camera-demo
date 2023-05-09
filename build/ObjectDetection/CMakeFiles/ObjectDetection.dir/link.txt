@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC   -shared  -o libObjectDetection.so CMakeFiles/ObjectDetection.dir/ObjectDetection.cpp.o 
