@@ -4,7 +4,9 @@ project (CameraDemo CXX)
 find_package(PkgConfig REQUIRED)
 
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD_REQUIRED ON) 
+
+include(${CMAKE_CURRENT_SOURCE_DIR}/conf.d/cmake/config.cmake)
 
 add_compile_options( -fPIC) 
 pkg_check_modules (AFBBINDING REQUIRED afb-binding)
