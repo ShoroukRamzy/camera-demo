@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 #add_compile_options( -fPIC) 
 pkg_check_modules (AFBBINDING REQUIRED afb-binding)
-pkg_check_modules(HELPERS REQUIRED afb-libhelpers)
+#pkg_check_modules(HELPERS REQUIRED afb-libhelpers)
 
 include_directories(${AFBBINDING_INCLUDE_DIRS})
 link_libraries(${AFBBINDING_LDFLAGS})

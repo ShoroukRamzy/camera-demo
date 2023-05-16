@@ -1,5 +1,5 @@
 #include <json-c/json.h>
-#include <wrap-json.h>
+//#include <wrap-json.h>
 
 #define AFB_BINDING_VERSION 4
 #include <afb/afb-binding>
