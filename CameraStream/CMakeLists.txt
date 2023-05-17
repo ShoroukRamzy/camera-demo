@@ -1,2 +1,3 @@
-set(target CameraStream)
-add_library(${target} MODULE CameraReader.cpp )
+set(TARGET CameraStream)
+add_library(${TARGET} MODULE CameraReader.cpp )
+install(TARGETS ${TARGET} DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)

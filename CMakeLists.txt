@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include(${CMAKE_CURRENT_SOURCE_DIR}/conf.d/cmake/config.cmake)
 
 #add_compile_options( -fPIC) 
-pkg_check_modules (AFBBINDING REQUIRED afb-binding)
+#pkg_check_modules (AFBBINDING REQUIRED afb-binding)
 #pkg_check_modules(HELPERS REQUIRED afb-libhelpers)
 
 include_directories(${AFBBINDING_INCLUDE_DIRS})
