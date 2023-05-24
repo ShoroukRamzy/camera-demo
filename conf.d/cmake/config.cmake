@@ -1,7 +1,7 @@
 
 # Project Info
 # ------------------
-set(PROJECT_NAME camera-app-project)
+set(PROJECT_NAME camera-demo)
 set(PROJECT_VERSION 1.0)
 set(PROJECT_PRETTY_NAME "Camera Application Project")
 set(PROJECT_DESCRIPTION "Provide camera demo bindings")
