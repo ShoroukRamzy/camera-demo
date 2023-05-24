@@ -22,7 +22,8 @@ required-permission:
   urn:AGL:permission:syscall:
     name: urn:AGL:permission:syscall:*
     value: required
-
+  
+  
    
 
   required-binding:

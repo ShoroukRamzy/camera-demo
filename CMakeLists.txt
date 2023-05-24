@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.13)
 
-project (CameraDemo CXX)
+project (camera-demo CXX)
 find_package(PkgConfig REQUIRED)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -17,5 +17,8 @@ link_libraries(${AFBBINDING_LDFLAGS})
 
 add_subdirectory(CameraStream)
 add_subdirectory(ObjectDetection)
+
+install(DIRECTORY .rpconfig DESTINATION ${CMAKE_INSTALL_PREFIX}/redpesk/${PROJECT_NAME})
+
 #add_subdirectory(DisplayApp)
 
