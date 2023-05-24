@@ -1,6 +1,6 @@
 rp-manifest: 1
 
-id: cameraApp
+id: camera-demo
 version: 1
 author: Valeo 
 license: GPL
