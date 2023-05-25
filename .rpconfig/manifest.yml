@@ -1,20 +1,14 @@
 rp-manifest: 1
-
 id: camera-demo
 version: 1
-author: Valeo 
+author: Valeo
 license: GPL
-
-description: >
+description: |
   Camera Demo
-
 targets:
   - target: main
-
 content:
-	type: application/vnd.agl.service
-   
-
+  type: application/vnd.agl.service
 required-permission:
   urn:AGL:permission:real-time:
     name: urn:AGL:permission:real-time
@@ -22,16 +16,11 @@ required-permission:
   urn:AGL:permission:syscall:
     name: urn:AGL:permission:syscall:*
     value: required
-  
-  
-   
-
   required-binding:
-   - name: lib/afb-CameraStream.so
-     value: local
-   - name: lib/afb-ObjectDetection.so
-     value: local
-
+    - name: lib/afb-CameraStream.so
+      value: local
+    - name: lib/afb-ObjectDetection.so
+      value: local
 provided-api:
   - name: CameraStream
     value: auto
