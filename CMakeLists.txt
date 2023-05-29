@@ -18,7 +18,9 @@ link_libraries(${AFBBINDING_LDFLAGS})
 add_subdirectory(CameraStream)
 add_subdirectory(ObjectDetection)
 
-install(DIRECTORY .rpconfig DESTINATION ${CMAKE_INSTALL_PREFIX}/redpesk/${PROJECT_NAME})
+#install(DIRECTORY .rpconfig DESTINATION ${CMAKE_INSTALL_PREFIX}/redpesk/${PROJECT_NAME})
+
+install(DIRECTORY .rpconfig DESTINATION /var/local/lib/afm/applications/${PROJECT_NAME})
 
 #add_subdirectory(DisplayApp)
 
