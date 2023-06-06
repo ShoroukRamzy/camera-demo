@@ -71,7 +71,7 @@ struct afb_auth auth[]={
 
 
 const afb_verb_t verbs[]={
-afb::verb<subscribe>("subscribe",nullptr,0,&auth[0]),//when I add loa=1 ,object detection can not subscribe
+afb::verb<subscribe>("subscribe",nullptr,0,&auth[1]),//when I add loa=1 ,object detection can not subscribe
 afb::verb<unsubscribe>("unsubscribe"),
 afb::verbend()
 };

@@ -47,7 +47,7 @@ set(BUILD_TYPE "RELEASE")
 
 # Compiler selection if needed. Impose a minimal version.
 # -----------------------------------------------
-set (gcc_minimal_version 4.9)
+#set (gcc_minimal_version 4.9)
 
 # PKG_CONFIG required packages
 # -----------------------------
