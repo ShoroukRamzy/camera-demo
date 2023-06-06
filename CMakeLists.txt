@@ -15,8 +15,8 @@ include(${CMAKE_CURRENT_SOURCE_DIR}/conf.d/cmake/config.cmake)
 include_directories(${AFBBINDING_INCLUDE_DIRS})
 link_libraries(${AFBBINDING_LDFLAGS})
 
-add_subdirectory(CameraStream)
-add_subdirectory(ObjectDetection)
+#add_subdirectory(CameraStream)
+#add_subdirectory(ObjectDetection)
 
 #install(DIRECTORY .rpconfig DESTINATION ${CMAKE_INSTALL_PREFIX}/redpesk/${PROJECT_NAME})
 

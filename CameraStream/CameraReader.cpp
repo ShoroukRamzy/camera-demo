@@ -53,9 +53,25 @@ int mainctl(afb_api_x4_t api,afb_ctlid_t ctlid,afb_ctlarg_t ctlarg,void *userdat
 	return 0;
 
 }
+struct afb_auth auth[]={
+// /** authorized if LOA greater than or equal to data 'loa' */
+// afb_auth_LOA,
+
+// /** authorized if permission 'text' is granted */
+// afb_auth_Permission,
+	{
+	.type=afb_auth_LOA,
+	.loa=AFB_SESSION_LOA_1
+	},
+	{
+	.type=afb_auth_Permission,
+	.text="access_permission"
+	}
+};
+
 
 const afb_verb_t verbs[]={
-afb::verb<subscribe>("subscribe"),
+afb::verb<subscribe>("subscribe",nullptr,0,&auth[0]),//when I add loa=1 ,object detection can not subscribe
 afb::verb<unsubscribe>("unsubscribe"),
 afb::verbend()
 };
