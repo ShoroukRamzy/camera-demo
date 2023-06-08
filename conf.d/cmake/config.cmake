@@ -165,4 +165,4 @@ set(WIDGET_ENTRY_POINT config.xml)
 # This include is mandatory and MUST happens at the end
 # of this file, else you expose you to unexpected behavior
 # -----------------------------------------------------------
-include(CMakeAfbTemplates)
+#include(CMakeAfbTemplates)

@@ -30,8 +30,6 @@ afb::api API(api);
 }
 
 const afb_verb_t verbs[]={
-// afb::verb<subscribe>("subscribe"), 
-// afb::verb<unsubscribe>("unsubscribe"),
 afb::verbend()
 };
 
