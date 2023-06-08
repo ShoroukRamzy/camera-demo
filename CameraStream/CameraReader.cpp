@@ -64,6 +64,10 @@ struct afb_auth auth[]={
 	.loa=AFB_SESSION_LOA_1
 	},
 	{
+	.type=afb_auth_LOA,
+	.loa=AFB_SESSION_LOA_2
+	},
+	{
 	.type=afb_auth_Permission,
 	.text="access_permission"
 	}
@@ -71,8 +75,8 @@ struct afb_auth auth[]={
 
 
 const afb_verb_t verbs[]={
-afb::verb<subscribe>("subscribe",nullptr,0,&auth[1]),//when I add loa=1 ,object detection can not subscribe
-afb::verb<unsubscribe>("unsubscribe"),
+afb::verb<subscribe>("subscribe"/*,nullptr,0,&auth[0]*/),//when I add loa=1 ,object detection can not subscribe
+afb::verb<unsubscribe>("unsubscribe"/*,nullptr,0,&auth[1]*/),
 afb::verbend()
 };
 
