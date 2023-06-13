@@ -9,7 +9,7 @@ description: |
 targets:
   - target: main
     content:
-      src: /usr/redpesk/camera-demo/.rpconfig/manifest.yml
+      src: @APPDIR@/.rpconfig/manifest.yml
       type: application/vnd.agl.service
     required-permission:
       urn:AGL:permission:real-time:
@@ -19,9 +19,9 @@ targets:
         name: urn:AGL:permission:syscall
         value: required
     required-binding:
-      - name: /usr/redpesk/camera-demo/lib/libCameraStream.so
+      - name: @APPDIR@/lib/libCameraStream.so
         value: local
-      - name: /usr/redpesk/camera-demo/lib/libObjectDetection.so
+      - name: @APPDIR@/lib/libObjectDetection.so
         value: local
     provided-api:
       - name: CameraStream
