@@ -6,6 +6,8 @@ find_package(PkgConfig REQUIRED)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON) 
 
+set(AFM_APP_DIR ${CMAKE_INSTALL_PREFIX}/redpesk CACHE PATH "Root application directory")
+set(APPDIR ${AFM_APP_DIR}/${PROJECT_NAME})
 include(${CMAKE_CURRENT_SOURCE_DIR}/conf.d/cmake/config.cmake)
 
 
