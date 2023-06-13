@@ -15,6 +15,7 @@ link_libraries(${AFBBINDING_LDFLAGS})
 
 add_subdirectory(CameraStream)
 add_subdirectory(ObjectDetection)
+add_subdirectory(test/afb-test)
 
 configure_file(in.main-manifest.yml manifest.yml @ONLY)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/manifest.yml DESTINATION ${APPDIR}/.rpconfig)
