@@ -14,11 +14,13 @@
 # limitations under the License.
 ###########################################################################
 
-set(BINDING_NAME "camera-demo")
-set(BINDING_TEST_NAME "camera-demo-test")
+set(BINDING_NAME "${PROJECT_NAME}")
+set(BINDING_TEST_NAME "${PROJECT_NAME}-test")
 
 configure_file(run-redtest.in run-redtest @ONLY)
 
+set(CMAKE_INSTALL_LIBEXECDIR ${CMAKE_INSTALL_PREFIX}/libexec CACHE PATH "libexec directory")
+
 install(PROGRAMS ${CMAKE_BINARY_DIR}/redtest/run-redtest
-	DESTINATION ${CMAKE_INSTALL_LIBEXECDIR}/redtest/${BINDING_NAME}/)
+	DESTINATION ${CMAKE_INSTALL_LIBEXECDIR}/redtest/${PROJECT_NAME}/)
 

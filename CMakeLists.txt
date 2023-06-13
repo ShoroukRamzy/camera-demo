@@ -15,6 +15,7 @@ link_libraries(${AFBBINDING_LDFLAGS})
 
 add_subdirectory(CameraStream)
 add_subdirectory(ObjectDetection)
+add_subdirectory(redtest)
 add_subdirectory(test/afb-test)
 
 configure_file(in.main-manifest.yml manifest.yml @ONLY)
