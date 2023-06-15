@@ -16,7 +16,16 @@
 # limitations under the License.
 ###########################################################################
 
+set(TESTDIR ${APPDIR}-test)
 
-# Include any directory not starting with _
-# -----------------------------------------------------
-PROJECT_SUBDIRS_ADD(${PROJECT_SRC_DIR_PATTERN})
+configure_file(in.test-manifest.yml manifest.yml @ONLY)
+
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/manifest.yml DESTINATION ${TESTDIR}/.rpconfig)
+install(DIRECTORY etc bin DESTINATION ${TESTDIR})
+install(FILES
+		tests/CameraStream.lua
+		tests/mapi_tests.lua
+		fixtures/mapi_helloworld.lua
+	DESTINATION
+		${TESTDIR}/var)
+
