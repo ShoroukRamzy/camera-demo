@@ -7,7 +7,7 @@ license: GPL
 description: |
   Test of Camera Demo
 file-properties:
-  - name: @TESTDIR@/bin/launcher
+  - name: @TESTDIR@/bin/launcher.sh
     value: executable
 targets:
   - target: main
