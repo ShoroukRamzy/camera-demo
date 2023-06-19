@@ -7,12 +7,12 @@ license: GPL
 description: |
   Test of Camera Demo
 file-properties:
-  - name: @TESTDIR@/bin/launcher.sh
+  - name: bin/launcher.sh
     value: executable
 targets:
   - target: main
     content:
-      src: @TESTDIR@/bin/launcher.sh
+      src: bin/launcher.sh
       type: application/vnd.agl.native
     required-binding:
       - name: aft
@@ -28,4 +28,7 @@ targets:
         value: required
       urn:AGL:permission::partner:execute-shell:
         name: urn:AGL:permission::partner:execute-shell
+        value: required
+      urn:AGL:permission::public:no-htdocs:
+        name: urn:AGL:permission::public:no-htdocs
         value: required

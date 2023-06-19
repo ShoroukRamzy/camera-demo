@@ -9,7 +9,7 @@ description: |
 targets:
   - target: main
     content:
-      src: @APPDIR@/.rpconfig/manifest.yml
+      src: .rpconfig/manifest.yml
       type: application/vnd.agl.service
     required-permission:
       urn:AGL:permission:real-time:
@@ -19,9 +19,9 @@ targets:
         name: urn:AGL:permission:syscall
         value: required
     required-binding:
-      - name: @APPDIR@/lib/libCameraStream.so
+      - name: lib/libCameraStream.so
         value: local
-      - name: @APPDIR@/lib/libObjectDetection.so
+      - name: lib/libObjectDetection.so
         value: local
     provided-api:
       - name: CameraStream
