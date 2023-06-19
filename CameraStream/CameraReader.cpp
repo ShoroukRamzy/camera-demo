@@ -11,14 +11,14 @@ afb_timer_t timer;
 void onTimer(afb_timer_x4_t timer, void *closure, int decount)
 {
     static int count {0};
-    AFB_NOTICE("Capture image %d !",count++);
+    AFB_NOTICE("$OTA::Capture image %d !",count++);
     camera_event.push();
 }
 
 void subscribe (afb::req req,afb::received_data param)
 {
 
-    AFB_NOTICE("subscribe CameraStream!");
+    AFB_NOTICE("$OTA::subscribe CameraStream!");
 	req.subscribe(camera_event);
 
 	afb_timer_create(&timer,
