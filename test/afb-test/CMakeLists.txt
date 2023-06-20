@@ -18,9 +18,7 @@
 
 set(TESTDIR ${APPDIR}-test)
 
-configure_file(in.test-manifest.yml manifest.yml @ONLY)
-
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/manifest.yml DESTINATION ${TESTDIR}/.rpconfig)
+install(FILES test-manifest.yml DESTINATION ${TESTDIR}/.rpconfig RENAME manifest.yml)
 install(DIRECTORY etc bin DESTINATION ${TESTDIR})
 install(FILES
 		tests/CameraStream.lua
