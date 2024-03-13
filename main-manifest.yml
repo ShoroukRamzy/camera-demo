@@ -9,7 +9,7 @@ description: |
 targets:
   - target: main
     content:
-      src: .rpconfig/manifest.yml
+      src: /usr/redpesk/camera-demo/.rpconfig/manifest.yml
       type: application/vnd.agl.service
     required-permission:
       urn:AGL:permission:real-time:
