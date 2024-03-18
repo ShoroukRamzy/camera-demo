@@ -19,9 +19,9 @@ targets:
         name: urn:AGL:permission:syscall
         value: required
     required-binding:
-      - name: lib/libCameraStream.so
+      - name: /usr/redpesk/camera-demo/lib/libCameraStream.so
         value: local
-      - name: lib/libObjectDetection.so
+      - name: /usr/redpesk/camera-demo/lib/libObjectDetection.so
         value: local
     provided-api:
       - name: CameraStream
