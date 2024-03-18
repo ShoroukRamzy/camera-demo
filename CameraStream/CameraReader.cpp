@@ -2,6 +2,7 @@
 //#include <wrap-json.h>
 
 #define AFB_BINDING_VERSION 4
+#define AFB_BINDING_X4R1_ITF_REVISION 5
 #include <afb/afb-binding>
 using namespace std;
 
