@@ -10,7 +10,7 @@ using namespace std;
 void cameraEventHandler(void *closure,const char *event_name,unsigned nparams,afb_data_x4_t const params[],afb_api_x4_t api)
 {
     static int count{0};
-    AFB_NOTICE("start image object detection on image%d!", count++);
+    AFB_NOTICE("@SOTA::start image object detection on image%d!", count++);
 }
 
 
